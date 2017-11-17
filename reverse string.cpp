@@ -12,7 +12,7 @@ std::cout << foo << '\n' << copy << '\n';
 
 //der String kann individuell benannt werden. foo ist anscheinend irgendein inside joke. 
 
-std::reverse(copy.begin(), copy.end(); 
+std::reverse(copy.begin(), copy.end()); 
 std::cout << foo << '\n' << copy << '\n';
 return 0; 
 }
