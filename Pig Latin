@@ -1,0 +1,16 @@
+#include <iostream> 
+
+
+struct Foo {
+int n; 
+Foo() {
+std::cout << " Pig Latin Converter " '\n';
+std::cout << " Insert Word here " '\n'; //Error hier ? 
+std::cin >> n; 
+}
+};
+Foo f;
+int main ()
+{
+std:: cout << "Pig Latin: " <<f.n << '\n';
+}
