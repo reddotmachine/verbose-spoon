@@ -1,16 +1,34 @@
 #include <iostream> 
 
 
-struct Foo {
-int n; 
-Foo() {
-std::cout << " Pig Latin Converter " '\n';
-std::cout << " Insert Word here " '\n'; //Error hier ? 
-std::cin >> n; 
-}
-};
-Foo f;
-int main ()
+int main () {
+    
+std::string n; 
+std::cout << " Pig Latin Converter " "\n";
+std::cout << " Insert Word here ";
+getline(std::cin,n); 
+
+//Das Programm soll die ersten beiden buchstaben nehmen und ans ende hängen. hierbei soll ein bindestrich dazwischen stehen also z.b. Apfel 
+=> Fel-Ap// 
+
+// Read a line
+std::string n;
+std::getline(std::cin, n);
+
+// convert line to stream
+std::stringstream linestream(n);
+
+// Loop over it one word at a time.
+std::string word;
+while(linestream >> word)
 {
-std:: cout << "Pig Latin: " <<f.n << '\n';
+     // Operate on word.
+}
+
+
+
+
+
+std:: cout << "Pig Latin: " <<n << '\n';
+return 0;
 }
